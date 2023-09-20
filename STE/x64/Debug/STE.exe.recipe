@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>D:\VSrepo\STE\x64\Debug\STE.exe</FullPath>
+      <FullPath>D:\VSrepo\SimpleTextEditor\x64\Debug\STE.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

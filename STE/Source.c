@@ -97,10 +97,14 @@ int main() {
 			int line = 0;
 			int sym = 0;
 			printf("Choose line and index:");
-			scanf_s("%i%i", line, sym);
-			pointer = head;
-			while (line > 0 && sym > 0) {
-				if (pointer->symbol == "\n") {
+			scanf_s("%i %i", &line, &sym);
+			pointer = head->next;
+			while (line > 0 || sym > 0) {
+				if (pointer == NULL) {
+					printf("no such symbol");
+					break;
+				}
+				if (pointer->symbol == '\n') {
 					line--;
 				}
 				if (line == 0) {
@@ -108,10 +112,13 @@ int main() {
 				}
 				pointer = pointer->next;
 			}
-
+			if (pointer == NULL) {
+				break;
+			}
 			printf("Enter text to append:");
 			scanf_s("%s", text, sizeof(text));
 			i = 0;
+			struct node *tail = pointer->next;
 			while (text[i] != '\0') {
 				struct node* newnode = (struct node*)malloc(sizeof(struct node));
 				newnode->symbol = text[i];
@@ -120,6 +127,8 @@ int main() {
 				pointer = pointer->next;
 				i++;
 			}
+			pointer->next = tail;
+			break;
 		}
 		
 	}

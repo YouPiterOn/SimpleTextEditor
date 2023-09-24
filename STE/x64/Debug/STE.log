@@ -1,9 +1,10 @@
 ﻿  Source.c
-D:\VSrepo\SimpleTextEditor\STE\Source.c(16,18): warning C4133: '!=': incompatible types - from 'char [2]' to 'int *'
-D:\VSrepo\SimpleTextEditor\STE\Source.c(33,12): warning C4477: 'scanf_s' : format string '%s' requires an argument of type 'unsigned int', but variadic argument 2 has type 'size_t'
-D:\VSrepo\SimpleTextEditor\STE\Source.c(33,12): message : this argument is used as a buffer size
-D:\VSrepo\SimpleTextEditor\STE\Source.c(63,12): warning C4477: 'scanf_s' : format string '%s' requires an argument of type 'unsigned int', but variadic argument 2 has type 'size_t'
-D:\VSrepo\SimpleTextEditor\STE\Source.c(63,12): message : this argument is used as a buffer size
-D:\VSrepo\SimpleTextEditor\STE\Source.c(67,28): warning C4047: 'function': 'const char *const ' differs in levels of indirection from 'char'
-D:\VSrepo\SimpleTextEditor\STE\Source.c(67,28): warning C4024: 'fprintf': different types for formal and actual parameter 2
+D:\VSrepo\SimpleTextEditor\STE\Source.c(27,12): warning C4477: 'scanf_s' : format string '%s' requires an argument of type 'unsigned int', but variadic argument 2 has type 'size_t'
+D:\VSrepo\SimpleTextEditor\STE\Source.c(27,12): message : this argument is used as a buffer size
+D:\VSrepo\SimpleTextEditor\STE\Source.c(56,12): warning C4477: 'scanf_s' : format string '%s' requires an argument of type 'unsigned int', but variadic argument 2 has type 'size_t'
+D:\VSrepo\SimpleTextEditor\STE\Source.c(56,12): message : this argument is used as a buffer size
+D:\VSrepo\SimpleTextEditor\STE\Source.c(72,12): warning C4477: 'scanf_s' : format string '%s' requires an argument of type 'unsigned int', but variadic argument 2 has type 'size_t'
+D:\VSrepo\SimpleTextEditor\STE\Source.c(72,12): message : this argument is used as a buffer size
+D:\VSrepo\SimpleTextEditor\STE\Source.c(120,12): warning C4477: 'scanf_s' : format string '%s' requires an argument of type 'unsigned int', but variadic argument 2 has type 'size_t'
+D:\VSrepo\SimpleTextEditor\STE\Source.c(120,12): message : this argument is used as a buffer size
   STE.vcxproj -> D:\VSrepo\SimpleTextEditor\x64\Debug\STE.exe

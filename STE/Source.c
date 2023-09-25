@@ -17,6 +17,7 @@ int main() {
 	int i;
 	int line = 0;
 	int sym = 0;
+	char clear;
 	while (command != 9)
 	{
 		printf("Choose the command:\n");
@@ -26,7 +27,8 @@ int main() {
 		{
 		case 1:
 			printf("Enter text to append:");
-			scanf_s("%s", text, sizeof(text));
+			scanf_s("%c", &clear);
+			scanf_s("%[^\n]", text, sizeof(text));
 			i = 0;
 			pointer = head;
 			while (pointer->next != NULL) {
@@ -112,7 +114,8 @@ int main() {
 				break;
 			}
 			printf("Enter text to append:");
-			scanf_s("%s", text, sizeof(text));
+			scanf_s("%c", &clear);
+			scanf_s("%[^\n]", text, sizeof(text));
 			i = 0;
 			struct node *tail = pointer->next;
 			while (text[i] != '\0') {
@@ -127,7 +130,8 @@ int main() {
 			break;
 		case 7:
 			printf("Enter text to search:");
-			scanf_s("%s", text, sizeof(text));
+			scanf_s("%c", &clear);
+			scanf_s("%[^\n]", text, sizeof(text));
 			pointer = head->next;
 			line = 0;
 			sym = 0;
@@ -161,6 +165,8 @@ int main() {
 				}
 			}
 			break;
+		case 8:
+			system("cls");
 		}
 		
 	}
